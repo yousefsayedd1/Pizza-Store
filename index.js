@@ -1,5 +1,27 @@
-import { menuArray } from './data.js'
-// Render Meals List 
+// I had to add the data here because github pages don't support import
+const menuArray = [
+    {
+        name: "Pizza",
+        ingredients: ["pepperoni", "mushrom", "mozarella"],
+        id: 0,
+        price: 14,
+        emoji: "🍕"
+    },
+    {
+        name: "Hamburger",
+        ingredients: ["beef", "cheese", "lettuce"],
+        price: 12,
+        emoji: "🍔",
+        id: 1
+    },
+        {
+        name: "juice",
+        ingredients: ["orange, sugar, lemon, water"],
+        price: 12,
+        emoji: "🍺",
+        id: 2
+    }
+]// Render Meals List 
 const itemsArea = document.getElementById('items');
 function renderItemList(dataArr) {
     return dataArr.map(function(itemData){
