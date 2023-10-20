@@ -1,0 +1,223 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Smythe';
+}
+.outercontainer {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 30px auto;
+}
+header {
+    background-image: url(./images/heading-bg.png);
+    background-size: cover;
+    background-position: center;
+    padding: 46px;
+    color: white;
+}
+header .container h1{
+    color: #FFF;
+    font-size: 2.4rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+}
+header .container p {
+    color: #FFF;
+    font-size: 1.375rem;
+    font-weight: 400;
+    line-height: 0.8125rem;
+    margin-top: 19px;
+}
+.items, .order {
+    padding:  20px 46px;
+}
+.items .item {
+    display: flex;
+    align-items: center;    
+    margin-top: 45px;
+    height: 140px;
+    position: relative;
+    border-bottom: 1px solid #7d7d7d;
+}
+.items .item .item-image span {
+    font-size: 70px;
+}
+.items .item .item-details {
+    margin-left: 31px;
+    line-height: 24px;
+}
+.items .item .item-details h2 {
+    color: #000;
+    font-size: 1.75rem;
+    font-weight: 400;
+    line-height: 1rem;
+}
+.items .item .item-details .item-description{
+    color: #8B8B8B;
+}
+
+.items .item .item-details .item-price {
+    color: #000;
+    font-size: 1.25rem;
+}
+.items .item .add-buttons {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    border: 1.5px solid #DEDEDE;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+}
+.items .item .add-buttons a {
+    color: #3C3C3C;
+    text-decoration: none;
+    font-size: 2.25rem;
+    font-family: 'Inter';
+    font-weight: 200;
+    
+
+}
+.order {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.order .order-items {
+    
+    width: 100%;
+    border-bottom: 2px solid #393333;
+    margin: 64px 0 14px 0;
+}
+.order-item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: #000;
+    font-family: Smythe;
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1rem; 
+    margin-bottom: 22px;
+}
+#total-Price {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.order-btn {
+    width: 508px;
+    padding: 18px 0px 18px ;
+    border-radius: 3px;
+    background: #16DB99;
+    border: none;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+    color: var(--white, #FFF);
+    font-family: Verdana;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5rem; 
+}
+.order .order-item small  a{
+    margin-left: 13px;
+    text-decoration: none;
+    color: #BBB;
+    font-family: Verdana;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem; 
+}
+.order .order-item .price {
+    color: #000;
+    text-align: right;
+    font-family: Smythe;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+#close-area {
+    width: 100%;
+    height: 100vh;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 0;
+}
+.payment-data {
+    width: 524px;
+    height: 542.24px;
+    border-radius: 3.89px;
+    background: #FFF;
+    padding: 47px 25px 30px;
+    filter: drop-shadow(5.186544418334961px 5.186544418334961px 255.43731689453125px rgba(0, 0, 0, 0.50));
+    position: fixed;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    display: none;
+    z-index: 2;
+}
+.payment-data h2 {
+    color: #000;
+    font-family: Verdana;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.9rem; 
+    text-align: center;
+    margin-bottom: 46px;
+}
+.payment-data .input {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    margin-bottom: 46px;
+
+}
+.payment-data .input input {
+    width: 100%;
+    height: 71.304px;
+    padding: 16px 26px 13px;
+    color: #757575;
+    font-family: Verdana;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.9rem; 
+}
+.payment-data #pay-btn {
+    width: 100%;
+}
+
+
+.thanks-massage {
+    width: 100%;
+    height: 120px;
+    border-radius: 3px;
+    background: #ECFDF5;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+}
+.thanks-massage p {
+    color: #065F46;
+    font-family: Smythe;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1rem;  
+}
