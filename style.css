@@ -80,8 +80,6 @@ header .container p {
     font-size: 2.25rem;
     font-family: 'Inter';
     font-weight: 200;
-    
-
 }
 .order {
     display: flex;
@@ -201,8 +199,6 @@ header .container p {
 .payment-data #pay-btn {
     width: 100%;
 }
-
-
 .thanks-massage {
     width: 100%;
     height: 120px;
@@ -211,7 +207,6 @@ header .container p {
     display: none;
     justify-content: center;
     align-items: center;
-
 }
 .thanks-massage p {
     color: #065F46;
